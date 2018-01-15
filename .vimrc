@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 autocmd vimenter * NERDTree
+Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
+Plugin 'scrooloose/nerdcommenter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
