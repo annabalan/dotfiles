@@ -16,6 +16,7 @@ Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 autocmd vimenter * NERDTree
 Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'https://github.com/altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,6 +47,12 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"Solarized colorscheme settings
+set t_Co=256 "force terminal colors to 256
+let g:solarized_termcolors=256
+set background=dark
+silent! colorscheme solarized"
 
 " TAB settings
 set tabstop=4
