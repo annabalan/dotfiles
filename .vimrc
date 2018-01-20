@@ -1,5 +1,5 @@
-set nocompatible " be iMproved, required
-filetype off " required
+set nocompatible
+filetype off
 
 let mapleader=','
 
@@ -33,12 +33,6 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-"Solarized colorscheme settings
-set t_Co=256 "force terminal colors to 256
-let g:solarized_termcolors=256
-set background=dark
-silent! colorscheme solarized"
-
 " TAB settings
 set tabstop=4
 set softtabstop=4
@@ -65,6 +59,3 @@ filetype plugin indent on    " required
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
