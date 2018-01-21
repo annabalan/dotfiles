@@ -18,6 +18,9 @@ Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://github.com/altercation/vim-colors-solarized'
 
+syntax on
+colorscheme desert
+
 "NerdTree Settings
 let NERDTreeShowHidden=1 "force nerdtree to show hidden files
 let NERDTreeIgnore = ['\.swp$'] "hide .swp files
