@@ -19,7 +19,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://github.com/altercation/vim-colors-solarized'
 
 syntax on
-colorscheme desert
+"Solarized colorscheme settings
+set t_Co=256 "force terminal colors to 256
+let g:solarized_termcolors=256
+set background=dark
+silent! colorscheme solarized
 
 "NerdTree Settings
 let NERDTreeShowHidden=1 "force nerdtree to show hidden files
