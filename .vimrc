@@ -52,9 +52,11 @@ autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 " Miscellaneous settings
 set number
+set ruler
+set visualbell
+set wrap
 set showmatch
-set cursorline
-" 
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
