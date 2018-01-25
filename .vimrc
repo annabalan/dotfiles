@@ -3,6 +3,12 @@ filetype off
 
 let mapleader=','
 
+" For plugins to load correctly
+filetype plugin indent on
+
+" Security
+ set modelines=0
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -17,6 +23,7 @@ autocmd vimenter * NERDTree
 Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://github.com/altercation/vim-colors-solarized'
+Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting"
 
 syntax on
 "Solarized colorscheme settings
@@ -56,6 +63,11 @@ set ruler
 set visualbell
 set wrap
 set showmatch
+
+"Search & highlight settings
+set incsearch
+set hlsearch
+nnoremap <leader><space> :nohlsearch<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
