@@ -29,7 +29,7 @@ syntax on
 "Solarized colorscheme settings
 set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
-set background=dark
+set background=light
 silent! colorscheme solarized
 
 "NerdTree Settings
@@ -68,15 +68,3 @@ set showmatch
 set incsearch
 set hlsearch
 nnoremap <leader><space> :nohlsearch<CR>
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
