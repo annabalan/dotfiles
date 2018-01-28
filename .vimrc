@@ -16,17 +16,15 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'VundleVim/Vundle.vim'  
 Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
 autocmd vimenter * NERDTree
 Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'https://github.com/altercation/vim-colors-solarized'
 Plugin 'quramy/vim-js-pretty-template' "adds support of in-string html syntax highlighting"
-
+       
 syntax on
-"Solarized colorscheme settings
 set t_Co=256 "force terminal colors to 256
 let g:solarized_termcolors=256
 set background=light
@@ -57,14 +55,22 @@ autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
-" Miscellaneous settings
+" Set to auto read when a file is changed from the outside
+set autoread
+
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l 
+
+" Return to last edit position when opening files (You want this!)
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+"Miscellaneous settings
 set number
 set ruler
 set visualbell
 set wrap
 set showmatch
-
-"Search & highlight settings
-set incsearch
-set hlsearch
-nnoremap <leader><space> :nohlsearch<CR>
+" All of your Plugins must be added before the following line
+    call vundle#end()            " required
+    filetype plugin indent on    " required
