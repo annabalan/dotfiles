@@ -57,6 +57,9 @@ autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 
 " Set to auto read when a file is changed from the outside
 set autoread
+set wildmenu
+set confirm
+set autoindent
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
