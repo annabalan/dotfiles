@@ -13,7 +13,6 @@ call vundle#begin() "initialize vundle
     Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
     Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
-    Plugin 'https://github.com/altercation/vim-colors-solarized'
     Plugin 'scrooloose/nerdcommenter'
     Plugin 'tpope/vim-surround' "adds support for putting ({' ext around word objects
     Plugin 'christoomey/vim-tmux-navigator' "consistent nav bindings
@@ -41,4 +40,3 @@ nnoremap <C-H> <C-W><C-H>
 " Miscellaneous settings
 set number
 set showmatch
-set cursorline
