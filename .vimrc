@@ -37,3 +37,7 @@ nnoremap <C-H> <C-W><C-H>
 " Miscellaneous settings
 set number
 set showmatch
+set ruler
+set visualbell
+set wrap
+
