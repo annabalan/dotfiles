@@ -13,11 +13,17 @@ call vundle#begin() "initialize vundle
     Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
     Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
-
+    Plugin 'https://github.com/altercation/vim-colors-solarized'
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on
 syntax on "turn syntax highlighting on
+
+"Solarized colorscheme settings
+set t_Co=256 "force terminal colors to 256
+let g:solarized_termcolors=256
+set background=dark
+silent! colorscheme solarized
 
 "NerdTree Settings
 let NERDTreeShowHidden=1 "force nerdtree to show hidden files
