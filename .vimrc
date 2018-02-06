@@ -46,4 +46,9 @@ set showmatch
 set ruler
 set visualbell
 set wrap
+" Set to auto read when a file is changed from the outside
+set autoread
 
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l 
