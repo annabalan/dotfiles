@@ -46,6 +46,8 @@ set showmatch
 set ruler
 set visualbell
 set wrap
+set autoindent
+set confirm
 " Set to auto read when a file is changed from the outside
 set autoread
 
