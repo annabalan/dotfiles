@@ -58,6 +58,8 @@ set visualbell
 set wrap
 set autoindent
 set confirm
+set showcmd
+set wildmenu
 " Set to auto read when a file is changed from the outside
 set autoread
 
