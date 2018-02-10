@@ -63,6 +63,10 @@ set wildmenu
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" Searching settings
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l 
