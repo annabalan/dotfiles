@@ -57,6 +57,7 @@ set ruler
 set visualbell
 set wrap
 set autoindent
+set copyindent
 set confirm
 set showcmd
 set wildmenu
