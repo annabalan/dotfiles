@@ -2,7 +2,7 @@ set nocompatible
 filetype off " required
 
 let mapleader=','
-   
+
 "Setup vundle
 "For vundle to work, you must first use  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 filetype off "filetypes turned off initially for vundle setup
@@ -61,6 +61,10 @@ set copyindent
 set confirm
 set showcmd
 set wildmenu
+set hidden
+set history=100
+
+autocmd BufWritePre * :%s/\s\+$//e
 " Set to auto read when a file is changed from the outside
 set autoread
 
@@ -70,4 +74,4 @@ set hlsearch            " highlight matches
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l 
+set whichwrap+=<,>,h,l
