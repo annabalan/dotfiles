@@ -63,6 +63,7 @@ set showcmd
 set wildmenu
 set hidden
 set history=100
+set spell
 
 autocmd BufWritePre * :%s/\s\+$//e
 " Set to auto read when a file is changed from the outside
