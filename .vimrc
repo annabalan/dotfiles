@@ -64,6 +64,8 @@ set wildmenu
 set hidden
 set history=100
 set spell
+set ignorecase
+set smartcase
 
 autocmd BufWritePre * :%s/\s\+$//e
 " Set to auto read when a file is changed from the outside
