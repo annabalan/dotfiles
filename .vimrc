@@ -66,6 +66,7 @@ set history=100
 set spell
 set ignorecase
 set smartcase
+set linebreak
 
 autocmd BufWritePre * :%s/\s\+$//e
 " Set to auto read when a file is changed from the outside
