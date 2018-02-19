@@ -52,25 +52,25 @@ autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2"
 
 " Miscellaneous settings
 set number "Show line numbers on the sidebar
-set showmatch
+set showmatch "highlight matching ([{}])
 set ruler "always show cursor position
 set visualbell "Flash the screen instead of beeping on errors.
 set wrap "Enable line wrapping
 set autoindent "New lines inherit the indentation of previous lines
-set copyindent
+set copyindent "copy the previous indentation on autoindenting
 set confirm "Display a confirmation dialog when closing an unsaved file.
-set showcmd
+set showcmd "show command in bottom bar
 set wildmenu "Display command line’s tab complete options as a menu.
 set hidden "Hide files in the background instead of closing them
-set history=100
+set history=100 "remember limited commands and search history
 set ignorecase "Ignore case when searching
 set smartcase "Automatically switch search to case-sensitive when search query contains an uppercase letter.
 set linebreak "Avoid wrapping a line in the middle of a word
 set spelllang=en_us "Enable spellchecking in English
 
 autocmd BufWritePre * :%s/\s\+$//e
-" Set to auto read when a file is changed from the outside
-set autoread
+"delete trailing whitespace
+set autoread " Set to auto read when a file is changed from the outside
 
 " Searching settings
 set incsearch           " search as characters are entered
