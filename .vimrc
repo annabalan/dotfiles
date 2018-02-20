@@ -44,7 +44,7 @@ nnoremap <C-H> <C-W><C-H>
 set tabstop=4 "number of visual spaces per TAB
 set softtabstop=4 "number of spaces in tab when editing
 set expandtab "tabs are spaces
-set shiftwidth=4
+set shiftwidth=4 "control how many columns text is indented with the reindent operations
 autocmd FileType typescript setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType html setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
 autocmd FileType css setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2
