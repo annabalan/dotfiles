@@ -13,7 +13,8 @@ call vundle#begin() "initialize vundle
     Plugin 'VundleVim/Vundle.vim' "have vundle manage vundle
     Plugin 'https://github.com/scrooloose/nerdtree.git' "nerdtree plugin
     Plugin 'https://github.com/jiangmiao/auto-pairs' "auto complete [{()}]
-    Plugin 'https://github.com/altercation/vim-colors-solarized'
+    Plugin 'https://github.com/altercation/vim-colors-solarized' "colorscheme
+    Plugin 'https://github.com/airblade/vim-gitgutter.git' "git diff support
 call vundle#end()
 
 filetype plugin indent on "turn filetype autodetection back on
