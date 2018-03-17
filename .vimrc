@@ -80,3 +80,4 @@ set hlsearch            " highlight matches
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
+nmap <leader>w :w!<cr>
