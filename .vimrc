@@ -81,3 +81,4 @@ set hlsearch            " highlight matches
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 nmap <leader>w :w!<cr>
+set cmdheight=2
