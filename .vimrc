@@ -54,6 +54,8 @@ autocmd FileType sass setlocal expandtab shiftwidth=2 softtabstop=2 tabstop=2"
 " Miscellaneous settings
 set number "Show line numbers on the sidebar
 set showmatch "highlight matching ([{}])
+" How many tenths of a second to blink when matching brackets
+set mat=2
 set ruler "always show cursor position
 set visualbell "Flash the screen instead of beeping on errors.
 set wrap "Enable line wrapping
